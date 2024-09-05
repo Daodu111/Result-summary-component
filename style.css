@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&family=Young+Serif&display=swap');
+/* <weight>: Use a value from 100 to 900*/
+
+
+:root {
+    --color-white: #FFF;
+    --general-blue: #4e3ef5;
+    --active-blue: #303B59;
+    --reaction: #EA5C63;
+    --memory: #F6B74B;
+    --virtual: #31D7B0;
+    --ight-reaction: #FFF2F0;
+    --ight-memory: #FFF8E8;
+    --ight-virtual: #EBFFFD;
+    --light-visual: #ECECFF;
+    --gradient-blue: #8167f7;
+}
+
+* {
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 4em auto;
+    border-radius: 1.7em;
+    box-shadow: 0 10px 30px rgba(66, 51, 240, 0.2);
+}
+
+.box-1 {
+    width: 400px;
+    height: 450px;
+    /*border: 2px solid var(--general-blue);*/
+    background-image: linear-gradient(var(--gradient-blue), var(--general-blue)) ;
+    border-radius: 1.7em;
+    padding: 2em;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--color-white);
+}
+
+.box-1 h3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--color-white);
+    opacity: 0.8;
+}
+
+.circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: linear-gradient(var(--general-blue), var(--gradient-blue)) ;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.circle h1 {
+    font-weight: 800;
+    font-size: 4rem;
+    margin: 0.8em 0 0 0;
+    line-height: 1;
+}
+
+.circle p, .box-1 p {
+    margin: 0;
+    opacity: 0.7;
+}
+
+.box-1 h2 {
+    font-weight: 600;
+    margin: 0.8em 0 0 0;
+    line-height: 1.5;
+}
+
+.box-2 {
+    width: 400px;
+    height: 450px;
+    border-radius: 1.7em;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-2 h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--active-blue);
+    margin-top: 1.5em;
+}
+
+table {
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table tr {
+    padding: 1em;
+    margin: 1em;
+}
+
+table td {
+    padding: 0.8em;
+    font-size: 1rem;
+}
+
+.small-box-1 {
+    background-color: var(--ight-reaction);
+    border-spacing: 1em;
+    display: flex;
+    margin: 0 0 1.1em 0;
+    padding: 0.7em;
+    border-radius: 8px;
+}
+.small-box-1 span {
+    color: var(--reaction);
+    font-size: 1rem;
+    font-weight: 500;
+}
+p strong {
+    color: var(--active-blue);
+}
+.small-box-1 p {
+    margin: 0 0 0 6em;
+    font-size: 1rem;
+    /*opacity: 0.7;*/
+}
+.small-box-1 p span {
+    opacity: 0.5;
+    color: black;
+}
+
+.small-box-2 {
+    background-color: var(--ight-memory);
+    border-spacing: 1em;
+    display: flex;
+    margin: 0 0 1.5em 0;
+    padding: 0.7em;
+    border-radius: 8px;
+}
+.small-box-2 span {
+    color: var(--memory);
+    font-size: 1rem;
+    font-weight: 500;
+}
+p strong {
+    color: var(--active-blue);
+}
+.small-box-2 p {
+    margin: 0 0 0 6.2em;
+    font-size: 1rem;
+}
+.small-box-2 p span {
+    opacity: 0.5;
+    color: black;
+}
+
+.small-box-3 {
+    background-color: var(--ight-virtual);
+    border-spacing: 1em;
+    display: flex;
+    margin: 0 0 1.5em 0;
+    padding: 0.7em;
+    border-radius: 8px;
+}
+.small-box-3 span {
+    color: var(--virtual);
+    font-size: 1rem;
+    font-weight: 500;
+}
+p strong {
+    color: var(--active-blue);
+}
+.small-box-3 p {
+    margin: 0 0 0 7.2em;
+    font-size: 1rem;
+}
+.small-box-3 p span {
+    opacity: 0.5;
+    color: black;
+}
+
+.small-box-4 {
+    background-color: var(--light-visual);
+    border-spacing: 1em;
+    display: flex;
+    margin: 0 0 1.5em 0;
+    padding: 0.7em;
+    border-radius: 8px;
+}
+.small-box-4 span {
+    color: var(--general-blue);
+    font-size: 1rem;
+    font-weight: 500;
+}
+p strong {
+    color: var(--active-blue);
+}
+.small-box-4 p {
+    margin: 0 0 0 7.2em;
+}
+.small-box-4 p span {
+    opacity: 0.5;
+    color: var(--active-blue);
+}
+
+
+
+span svg {
+    vertical-align:-4px;
+}
+
+button {
+    width: 100%;
+    border: none;
+    padding: 0.8em 5em;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    font-weight: 500;
+    background-color: var(--general-blue);
+    color: var(--color-white);
+}
+
+button:hover {
+    background-color: var(--active-blue);
+}
+
+
+
+/*.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    max-width: 800px;
+    justify-items: center;
+}
+
+.box-1 {
+    border: 2px solid white;
+    box-shadow: 0 8px 15px rgba(66, 51, 240, 0.2);
+    width: 350px;
+    border-radius: 1.7em;
+    padding: 2em;
+}
+
+.small-box {
+    display: flex;
+}
+
+.split-para  { display:block;margin:10px;}
+.split-para span { display:block;float:right;width:50%;margin-left:10px;}
+
+.box-2 {
+    border: 2px solid var(--general-blue);
+    background-color: var(--general-blue);
+    width: 350px;
+    border-radius: 1.7em;
+    margin: 0;
+    padding: 2em;
+    text-align: center;
+
+}*/
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        margin: 0 auto;
+        border-radius: 0;
+        box-sizing: border-box;
+    }
+
+
+    .box-1 {
+        flex-direction: column; /* Arrange the boxes in a vertical column */
+        width: fit-content; /* Make the big box narrower */
+        height: 400px; /* Increase the height to accommodate the vertical layout */
+        border-radius: 0 0 25px 25px;
+    }
+
+    .box-2 {
+        width: fit-content; /* Make the big box narrower */
+        height: 400px; /* Make the small box take the full width of the parent */
+        margin: 0;
+    }
+
+    button {
+        width: 100%;
+        border: none;
+        padding: 1em 5em;
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+}
